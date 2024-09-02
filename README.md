@@ -82,7 +82,7 @@ Before setting up the pipeline, ensure you have the following installed on your 
 
     ```bash
     python write_to_ml.py
-    streamlit run your_streamlit_app.py
+    streamlit run streamlit.py
     ```
 
 ## Docker Compose Services
