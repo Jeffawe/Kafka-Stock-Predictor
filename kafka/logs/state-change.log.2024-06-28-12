@@ -1,0 +1,5 @@
+[2024-06-28 12:03:28,229] INFO [Broker id=1] Transitioning 2 partition(s) to local leaders. (state.change.logger)
+[2024-06-28 12:03:28,230] INFO [Broker id=1] Creating new partition t1-1 with topic id fFEHySCfS7SSrZ9Fvm8TdQ. (state.change.logger)
+[2024-06-28 12:03:28,252] INFO [Broker id=1] Leader t1-1 with topic id Some(fFEHySCfS7SSrZ9Fvm8TdQ) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [1], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1. (state.change.logger)
+[2024-06-28 12:03:28,257] INFO [Broker id=1] Creating new partition t1-0 with topic id fFEHySCfS7SSrZ9Fvm8TdQ. (state.change.logger)
+[2024-06-28 12:03:28,268] INFO [Broker id=1] Leader t1-0 with topic id Some(fFEHySCfS7SSrZ9Fvm8TdQ) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [1], adding replicas [] and removing replicas [] . Previous leader None and previous leader epoch was -1. (state.change.logger)

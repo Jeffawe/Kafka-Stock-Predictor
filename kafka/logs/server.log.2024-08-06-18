@@ -1,0 +1,6 @@
+[2024-08-06 18:54:18,141] INFO [NodeToControllerChannelManager id=1 name=heartbeat] Node 1 disconnected. (org.apache.kafka.clients.NetworkClient)
+[2024-08-06 18:54:18,225] INFO [GroupCoordinator 1]: Member sr-1-f85f5310-1a0b-4472-a78a-2a85f156ad6d in group schema-registry has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2024-08-06 18:54:18,229] INFO [GroupCoordinator 1]: Preparing to rebalance group schema-registry in state PreparingRebalance with old generation 3 (__consumer_offsets-29) (reason: removing member sr-1-f85f5310-1a0b-4472-a78a-2a85f156ad6d on heartbeat expiration) (kafka.coordinator.group.GroupCoordinator)
+[2024-08-06 18:54:18,264] INFO [GroupCoordinator 1]: Group schema-registry with generation 4 is now empty (__consumer_offsets-29) (kafka.coordinator.group.GroupCoordinator)
+[2024-08-06 18:54:18,354] INFO [SnapshotGenerator id=1] Creating new KRaft snapshot file snapshot 00000000000000016368-0000000001 because we have waited at least 60 minute(s). (org.apache.kafka.image.publisher.SnapshotGenerator)
+[2024-08-06 18:54:18,355] INFO [SnapshotEmitter id=1] Successfully wrote snapshot 00000000000000016368-0000000001 (org.apache.kafka.image.publisher.SnapshotEmitter)

@@ -1,0 +1,3 @@
+[2024-08-06 18:54:18,281] INFO [QuorumController id=1] Fencing broker 1 because its session has timed out. (org.apache.kafka.controller.ReplicationControlManager)
+[2024-08-06 18:54:18,304] INFO [QuorumController id=1] handleBrokerFenced: changing 53 partition(s) (org.apache.kafka.controller.ReplicationControlManager)
+[2024-08-06 18:54:18,308] INFO [QuorumController id=1] Replayed BrokerRegistrationChangeRecord modifying the registration for broker 1: BrokerRegistrationChangeRecord(brokerId=1, brokerEpoch=8, fenced=1, inControlledShutdown=0, logDirs=[]) (org.apache.kafka.controller.ClusterControlManager)
