@@ -39,9 +39,9 @@ def sendToTopic(topic_name, ticker, num_days, start_date):
     data = get_stock_data_json(ticker, num_days, start_date)
     for x in data:
         producer.send(topic_name, x)
-        print(x)
         time.sleep(1)
         
+    producer.flush()
     print(f"Items of length {len(data)} added to the topic.")
     
 def createData(topic_name, type, ticker, num_days, start_date):
@@ -49,6 +49,8 @@ def createData(topic_name, type, ticker, num_days, start_date):
         log_sensor_data()
     else:
         sendToTopic(topic_name, ticker, num_days, start_date)
+        
+    producer.close()
         
 def create_kafka_topic(bootstrap_servers, topic_name, num_partitions=1, replication_factor=1):
     admin_client = KafkaAdminClient(
