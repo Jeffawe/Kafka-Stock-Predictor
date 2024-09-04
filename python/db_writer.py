@@ -29,7 +29,7 @@ def setup_database():
                         date DATE,
                         open FLOAT,
                         high FLOAT,
-                        low FLOAT,
+                        low FLOAT,                                                                                                                                                                                                          
                         close FLOAT,
                         volume BIGINT,
                         dividends FLOAT,
@@ -68,7 +68,7 @@ def cockroachWrite(event):
         # Insert into the database
         with conn.cursor() as cur:
             cur.execute("""
-                INSERT INTO stock_data (ticker, date, open, high, low, close, volume, dividends, stock_splits) 
+                INSERT INTO stock_dat                                                                                                                                                                                         a (ticker, date, open, high, low, close, volume, dividends, stock_splits) 
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
                 """, (ticker, date, open_price, high, low, close, volume, dividends, stock_splits))
         conn.commit()

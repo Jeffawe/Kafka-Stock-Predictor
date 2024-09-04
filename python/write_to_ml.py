@@ -71,5 +71,3 @@ def train_pipeline():
     score = pipeline.score(X_test, y_test)
     return pipeline, score
 
-train_pipeline()
-

@@ -32,6 +32,12 @@ def load_pipeline():
 st.title('Stock Price Predictor')
 
 st.write("""
+### Important Notice
+This model is for testing purposes only. It is not intended for use in production environments or for making real-life predictions.
+""")
+
+
+st.write("""
 ### Predict the Closing Price of a Stock
 Enter the values for the 'Company', 'Open', 'High', 'Low', and 'Volume' to predict the 'Close' price of the stock.
 """)
@@ -67,6 +73,6 @@ if st.button('Predict Closing Price'):
     except ValueError as e:
         st.write(f"Didn't train using the companies data. Try again another time. In the meantime, we'll work on getting that data")
 
-# Show actual data used for model training (optional)
+# Show actual data used for model training
 if st.checkbox('Show training data'):
     st.write(df)
